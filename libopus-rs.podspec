@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "libopus-rs"
-  s.version      = "1.2.1"
+  s.version      = "1.2.1.1"
   s.summary      = "Opus is a totally open, royalty-free, highly versatile audio codec."
 
   s.description  = <<-DESC
@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.requires_arc = false
 
+  s.module_name = 'libopus'
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/' + s.name + '/silk"' }
 
   s.prepare_command = <<-CMD
